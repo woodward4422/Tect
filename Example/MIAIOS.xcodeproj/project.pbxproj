@@ -141,6 +141,7 @@
 		A25BE14D1EF3D48A002681B9 /* solutions.txt in Resources */ = {isa = PBXBuildFile; fileRef = A25BE14B1EF3D48A002681B9 /* solutions.txt */; };
 		A25BE14F1EF3DA00002681B9 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BE14E1EF3DA00002681B9 /* SnapshotHelper.swift */; };
 		D51E42A4118804592EC54A5A /* Pods_MIAIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B9DC35C6B7137D7621BDEB /* Pods_MIAIOSUITests.framework */; };
+		E92F1B77217C4F7200D355CC /* AudioInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92F1B76217C4F7200D355CC /* AudioInputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -417,6 +418,7 @@
 		ADAFA0772D3D8029C5888CE3 /* Pods_DemosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81C9333829AE0B8A6BA56AC /* Pods-MapsIndoors GitHub App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsIndoors GitHub App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapsIndoors GitHub App/Pods-MapsIndoors GitHub App.debug.xcconfig"; sourceTree = "<group>"; };
 		D2D5947073BD8F0FC097E49D /* Pods-MIAIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIAIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MIAIOSUITests/Pods-MIAIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E92F1B76217C4F7200D355CC /* AudioInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioInputViewController.swift; sourceTree = "<group>"; };
 		F27563464043C64BD39E92E1 /* Pods-Demos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demos/Pods-Demos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -533,6 +535,7 @@
 		30300A6220739FEC00BC24BE /* Show Venue */ = {
 			isa = PBXGroup;
 			children = (
+				E92F1B76217C4F7200D355CC /* AudioInputViewController.swift */,
 				30300A6320739FEC00BC24BE /* ShowVenueController.swift */,
 			);
 			path = "Show Venue";
@@ -1707,6 +1710,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92F1B77217C4F7200D355CC /* AudioInputViewController.swift in Sources */,
 				30300A9B20739FEC00BC24BE /* CustomFloorSelectorController.swift in Sources */,
 				30300A8A20739FEC00BC24BE /* BaseMapDemoController.swift in Sources */,
 				30300A8C20739FEC00BC24BE /* MyPositionProvider.swift in Sources */,
