@@ -191,7 +191,7 @@ class AudioInputViewController: UIViewController {
         
     }
     
-    func timerEnded() {
+    @objc func timerEnded() {
         // If the audio recording engine is running stop it and remove the SFSpeechRecognitionTask
         if audioEngine.isRunning {
             stopRecording()

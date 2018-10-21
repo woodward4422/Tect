@@ -14,9 +14,9 @@ struct SMSService {
         let parameters: Parameters = [
             "From":Constants.twilioFromNumber,
             "To": Constants.twilioToNumber,
-            "Body": message]
+            "Parameters":"{\"Body\":\"\(message)\"}"]
         
-        Alamofire.request(Constants.twilioURL, method: .post, parameters: parameters)
+        Alamofire.request("https://studio.twilio.com/v1/Flows/FWc63377a30d6493bed1b198ebd4333d86/Executions", method: .post, parameters: parameters, encoding: URLEncoding.httpBody)
             .authenticate(user: Constants.twilioSID , password:Constants.twilioAuth)
             .responseJSON { response in
                 debugPrint(response)

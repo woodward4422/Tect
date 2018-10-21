@@ -21,16 +21,26 @@ class ShowVenueController: UIViewController, MPMapControlDelegate {
         
         super.viewDidLoad()
         
+        SMSService.SMSSend(message:"Sup Homie")
         self.map = GMSMapView.init(frame: CGRect.zero)
-        
-        self.view = self.map
-        
-        
-        
         let emergencyTextFieldFrame = CGRect(x: 0.0, y: 0.0, width: 100.0, height: 30.0)
         emergencyTextField = UITextField(frame: emergencyTextFieldFrame)
-        emergencyTextField.autoPinEdgetosuperviewEdge
         self.view.addSubview(emergencyTextField)
+        emergencyTextField.autoPinEdge(toSuperviewEdge: .top, withInset: 50)
+        emergencyTextField.autoPinEdge(toSuperviewEdge: .left, withInset: 15)
+        emergencyTextField.autoPinEdge(toSuperviewEdge: .right, withInset: 15)
+        emergencyTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        emergencyTextField.text = "Hey"
+        
+        self.view.addSubview(self.map!)
+        self.map?.autoPinEdge(toSuperviewEdge:.top)
+        self.map?.autoPinEdge(toSuperviewEdge: .right)
+        self.map?.autoPinEdge(toSuperviewEdge: .bottom)
+        self.map?.autoPinEdge(toSuperviewEdge: .left)
+        
+        
+        
+        
         
         self.map?.camera = .camera(withLatitude: 57.057964, longitude: 9.9504112, zoom: 20)
         
@@ -38,6 +48,7 @@ class ShowVenueController: UIViewController, MPMapControlDelegate {
         
         self.mapControl?.delegate = self
     }
+        
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         self.view.bringSubview(toFront: emergencyTextField)

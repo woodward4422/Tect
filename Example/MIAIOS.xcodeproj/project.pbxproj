@@ -133,8 +133,8 @@
 		37B192DB99CBF59BCA579F9C /* Pods_Demos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DC42EAF42DEBA25426C12E /* Pods_Demos.framework */; };
 		464D9C029B5E04AA8874AE3A /* Pods_MapsIndoors_GitHub_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034018EF88748B15EAE6990D /* Pods_MapsIndoors_GitHub_App.framework */; };
 		7AAB15AF217C2A1600A77902 /* TectMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AAB15AD217C283A00A77902 /* TectMain.storyboard */; };
-		7AAB15B2217C322D00A77902 /* SMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB15B1217C322D00A77902 /* SMSService.swift */; };
 		7AAB15B5217C32F000A77902 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB15B4217C32F000A77902 /* Constants.swift */; };
+		7AAB15B8217CE72300A77902 /* SMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB15B1217C322D00A77902 /* SMSService.swift */; };
 		8A2EFF197DAC2D90899497E4 /* Pods_DemosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAFA0772D3D8029C5888CE3 /* Pods_DemosUITests.framework */; };
 		A25BDFD01EF3B0FD002681B9 /* MIAIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BDFCF1EF3B0FD002681B9 /* MIAIOSUITests.swift */; };
 		A25BE14C1EF3D48A002681B9 /* solution.txt in Resources */ = {isa = PBXBuildFile; fileRef = A25BE14A1EF3D48A002681B9 /* solution.txt */; };
@@ -1713,6 +1713,7 @@
 				E92F1B77217C4F7200D355CC /* AudioInputViewController.swift in Sources */,
 				30300A9B20739FEC00BC24BE /* CustomFloorSelectorController.swift in Sources */,
 				30300A8A20739FEC00BC24BE /* BaseMapDemoController.swift in Sources */,
+				7AAB15B8217CE72300A77902 /* SMSService.swift in Sources */,
 				30300A8C20739FEC00BC24BE /* MyPositionProvider.swift in Sources */,
 				30300A9E20739FEC00BC24BE /* ShowRouteController.swift in Sources */,
 				30300A9320739FEC00BC24BE /* LocationDetailsController.swift in Sources */,
@@ -1746,7 +1747,6 @@
 			files = (
 				A25BDFD01EF3B0FD002681B9 /* MIAIOSUITests.swift in Sources */,
 				A25BE14F1EF3DA00002681B9 /* SnapshotHelper.swift in Sources */,
-				7AAB15B2217C322D00A77902 /* SMSService.swift in Sources */,
 				7AAB15B5217C32F000A77902 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
